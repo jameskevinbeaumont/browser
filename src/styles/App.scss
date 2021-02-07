@@ -1,8 +1,11 @@
 @import './partials/mixins';
 @import './partials/typography';
-// @import './partials/nav';
-// @import './partials/browse';
-// @import './partials/history';
+@import './partials/variables';
+@import './partials/nav';
+@import './partials/sidebar';
+@import './partials/browser';
+@import './partials/history';
+@import './partials/browsermodal';
 
 * {
     margin: 0;

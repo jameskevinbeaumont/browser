@@ -40,6 +40,16 @@ $desktop14-breakpoint: 1400px;
     align-items: center;
   }
 
+  @mixin margin-lr($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+  }
+
+  @mixin margin-tb($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+  }
+
   @mixin padding-lr($left, $right) {
     padding-left: $left;
     padding-right: $right;

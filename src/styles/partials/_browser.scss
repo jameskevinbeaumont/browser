@@ -1,0 +1,105 @@
+.browser {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    @include mob-tab-int {
+        margin-top: 8rem;
+    }
+    &__file {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        &-label {
+            @include margin-lr(1rem, 0);
+            font-size: .85rem;
+            width: 30px;
+            @include mob-tab-int {
+                @include margin-lr(3rem, .5rem);
+            }
+        }
+        &-name {
+            display: flex;
+            @include margin-lr(.25rem, .5rem);
+            align-items: center;
+            height: 26px;
+            width: 160px;
+            border: 1px solid grey;
+            box-shadow: 0px -1px gray;
+            @include mob-tab-int {
+                @include margin-lr(2rem, 2rem);
+                width: 200px;
+            }
+        }
+    }
+    &__button {
+        height: 28px;
+        width: 90px;
+        background-color: white;
+        border: 1px solid grey;
+        border-radius: 5px;
+        @include mob-tab-int {
+            width: 110px;
+        }
+    }
+    &__upload {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: 5rem;
+        @include mob-tab-int {
+            margin-top: 1rem;
+            margin-left: 10rem;
+        }
+    }
+    &__progress {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 50%;
+        margin-top: 1rem;
+        margin-left: 5rem;
+        @include mob-tab-int {
+            margin-top: 0;
+            margin-left: 10rem;
+        }
+    }
+}
+
+.message {
+    display: none;
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+    font-size: .85rem;
+    width: 128px;
+    height: 22px;
+}
+
+.progress {
+    display: none;
+    width: 145px;
+    height: 22px;
+    border: 1px solid grey;
+    margin-top: 2rem;
+    background-color: white;
+}
+
+.progress-bar { 
+    height: 20px;
+    background-color: white;  
+    transition: 0.4s linear;  
+    transition-property: width, background-color;    
+}
+
+.progress-green .progress-bar {   
+    background-color: green; 
+    width: 100%; 
+    animation: progressAnimationStrike 5s;
+}
+
+@keyframes progressAnimationStrike {
+    from { width: 0 }
+    to   { width: 100% }
+}
