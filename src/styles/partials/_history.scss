@@ -1,0 +1,26 @@
+.history {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    @include mob-tab-int {
+        margin-top: 5rem;
+        margin-left: 1rem;
+    }
+    &__button {
+        height: 28px;
+        width: 90px;
+        background-color: white;
+        border: 1px solid grey;
+        border-radius: 5px;
+        @include mob-tab-int {
+            width: 110px;
+        }
+    }
+}
+
+ul {
+    font-size: .85rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}

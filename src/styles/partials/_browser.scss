@@ -58,10 +58,11 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 50%;
+        width: 92%;
         margin-top: 1rem;
-        margin-left: 5rem;
+        margin-left: 1rem;
         @include mob-tab-int {
+            width: 50%;
             margin-top: 0;
             margin-left: 10rem;
         }

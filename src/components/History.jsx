@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function History({ fileHistory, setFileHistory }) {
-    console.log(fileHistory);
+    fileHistory.map((item) => { console.log(item.id, item.filename) });
     const clearHistory = () => {
-
+        setFileHistory([]);
     };
 
     return (
@@ -12,7 +12,13 @@ function History({ fileHistory, setFileHistory }) {
                 className="browser__button"
                 id="clear-button"
                 onClick={clearHistory}>clear</button>
-
+            <ul>
+                {
+                    fileHistory.map((item) =>
+                        <li key={item.id}>{item.filename}</li>
+                    )
+                }
+            </ul>
         </div>
     )
 };

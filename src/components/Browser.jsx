@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserModal } from "../components";
+import { v4 as uuidv4 } from 'uuid';
 
 function Browser({ fileHistory, setFileHistory }) {
     const [uploadStatus, setUploadStatus] = useState(true);
@@ -35,7 +36,7 @@ function Browser({ fileHistory, setFileHistory }) {
     const finishUpload = () => {
         setUploadStatus(true);
         setShowMessage(true);
-        setFileHistory(fileHistory => [...fileHistory, fileName]);
+        setFileHistory(fileHistory => [...fileHistory, { id: uuidv4(), filename: fileName }]);
     };
 
     return (
