@@ -86,7 +86,6 @@ export default function CustomizedTreeView({ handleFile }) {
             defaultExpandIcon={<PlusSquare />}
             defaultEndIcon={<CloseSquare />}
         >
-            {/* onClick={() => displayNode("2")} */}
             <StyledTreeItem nodeId="1" label="root" onClick={() => handleFile("")} >
                 <StyledTreeItem nodeId="2" label="directory3" onClick={() => handleFile("")} >
                     <StyledTreeItem nodeId="5" label="directory5" onClick={() => handleFile("")} >

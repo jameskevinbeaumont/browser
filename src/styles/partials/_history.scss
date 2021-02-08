@@ -3,10 +3,6 @@
     flex-direction: column;
     margin-top: 5rem;
     margin-left: 1rem;
-    @include mob-tab-int {
-        margin-top: 5rem;
-        margin-left: 1rem;
-    }
     &__button {
         height: 28px;
         width: 90px;

@@ -1,3 +1,11 @@
+# About
+
+This project was created using React and I used the TreeView API from material-ui. There were a lot of React libraries to choose from for the browser tree view and many did not have the same look as the requirements or had many more features than needed so I settled on this one. The only drawback was that it did not have the ability to select a file so I had to perform a pretty quick "hack" just so that the overall functionality of the requirements spec would work. Obviously with more time I would have researched a more robust solution and integrated it but due to time constraints just wanted to display my ability to get a working version in the time allotted.
+
+This is a responsive design in the mobile to table viewport range, from 320px to 768px. I did not extend the responsiveness to the desktop realm.
+
+Other than the test component that I was not familiar with, all of the bonus features were addressed and you can view the package.json file so as to see the npm packages required for installation in order to run the app. I was not sure if this should have been deployed to a site like heroku for review but I could do that if you like.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

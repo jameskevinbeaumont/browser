@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 function History({ fileHistory, setFileHistory }) {
-    fileHistory.map((item) => { console.log(item.id, item.filename) });
     const clearHistory = () => {
         setFileHistory([]);
     };
